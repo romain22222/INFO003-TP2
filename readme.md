@@ -16,6 +16,7 @@ Pour tester une solution, vous pouvez entrer la commande
 `python3 .\main.py verif <Path vers l'instance à tester> "Solution à tester"`
 
 Les deux premières commandes afficheront le résultat de l'algorithme sous la forme :
+
 `[<Est-ce qu'une solution a été trouvée>, <Tableau des couleurs trouvées résolvant 3-couleur>]`
 
 La dernière affichera :
@@ -33,11 +34,13 @@ Pour random, on trouve la solution en moyenne une fois sur 2, mais il semble que
 ### 1.1
 
 Voir `solveClique.py`
+
 Lancement : `python3 .\solveClique.py <Path vers l'instance à tester> <taille de la clique recherchée>`
 
 ### 1.2
 
 Voir `solve3Coloration.py`
+
 Lancement : `python3 .\solve3Coloration.py <Path vers l'instance à tester>`
 
 ### 2.1
@@ -45,6 +48,7 @@ Lancement : `python3 .\solve3Coloration.py <Path vers l'instance à tester>`
 #### 1.
 
 Voir `solve3CliquesCoverage.py`
+
 Lancement : `python3 .\solve3CliquesCoverage.py <Path vers l'instance à tester>`
 
 #### 2. 
@@ -63,6 +67,7 @@ Vu que l'on a une réduction polynomiale du problème de 3-cliques coverage au p
 #### 1.
 
 Voir `solve3SAT.py`
+
 Lancement : `python3 .\solve3SAT.py <Path vers l'instance à tester> [--verif <Solution : Pour vérifier une solution>]`
 
 #### 2.
