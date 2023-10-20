@@ -57,9 +57,14 @@ def solve3SAT(problem, isVerbose):
 
 if __name__ == '__main__':
 	if len(sys.argv) < 2:
-		print("usage : python3 solve3SAT.py <filename> [-v]")
+		print("usage : python3 solve3SAT.py <filename> [-verif] [-v]")
 		exit(1)
 	filename = sys.argv[1]
+	if len(sys.argv) > 3 and sys.argv[2] in ["-verif", "--verif"]:
+		solveToCheck = eval(sys.argv[3])
+		print("Solution à vérifier : " + str(solveToCheck) + ".")
+		print("Vérification de la solution : " + str(verificateur3SAT(extract3SAT(filename), solveToCheck)) + ".")
+		exit(0)
 	if len(sys.argv) > 2 and sys.argv[2] in ["-v", "--verbose"]:
 		verbose = True
 	else:
