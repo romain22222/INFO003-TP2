@@ -30,23 +30,22 @@ Pour random, on trouve la solution en moyenne une fois sur 2, mais il semble que
 
 ## Partie 2
 
-### Lancement
-
-`python3 .\solve<Nom du probleme à check>.py <Path vers l'instance à tester>` <Cas du solveClique : taille de la clique recherchée>
-
 ### 1.1
 
 Voir `solveClique.py`
+Lancement : `python3 .\solveClique.py <Path vers l'instance à tester> <taille de la clique recherchée>`
 
 ### 1.2
 
 Voir `solve3Coloration.py`
+Lancement : `python3 .\solve3Coloration.py <Path vers l'instance à tester>`
 
 ### 2.1
 
 #### 1.
 
 Voir `solve3CliquesCoverage.py`
+Lancement : `python3 .\solve3CliquesCoverage.py <Path vers l'instance à tester>`
 
 #### 2. 
 
@@ -64,3 +63,8 @@ Vu que l'on a une réduction polynomiale du problème de 3-cliques coverage au p
 #### 1.
 
 Voir `solve3SAT.py`
+Lancement : `python3 .\solve3SAT.py <Path vers l'instance à tester> [--verif <Solution : Pour vérifier une solution>]`
+
+#### 2.
+
+Vu que 3SAT est NP-complet, et que l'on a une réduction polynomiale du problème de 3SAT au problème de 3-coloration, alors le problème de 3-coloration est NP-complet.
