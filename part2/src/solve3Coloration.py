@@ -41,12 +41,10 @@ def solve3Coloration(graph, isVerbose):
 	Pour chaque paire de sommets (u,v), si (u,v) est une arête,
 	on ajoute la contrainte qu'ils ne peuvent pas avoir la même couleur
 	"""
-	for u in range(1, n + 1):
-		for v in range(u + 1, n + 1):
-			if (u - 1, v - 1) in graph[1] or (v - 1, u - 1) in graph[1]:
-				cnf.append([-u, -v])
-				cnf.append([-(u + n), -(v + n)])
-				cnf.append([-(u + 2 * n), -(v + 2 * n)])
+	for e in graph[1]:
+		cnf.append([-(e[0]+1), -(e[1]+1)])
+		cnf.append([-(e[0]+1 + n), -(e[1]+1 + n)])
+		cnf.append([-(e[0]+1 + 2 * n), -(e[1]+1 + 2 * n)])
 
 	if isVerbose:
 		print("Entrée pour le SAT solveur")
