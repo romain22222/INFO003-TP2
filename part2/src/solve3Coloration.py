@@ -55,7 +55,7 @@ def solve3Coloration(graph, isVerbose):
 		print("Solution pour SAT")
 		print(solutionSAT)
 
-	return [] if solutionSAT == "UNSAT" else solutionSAT[:3*n]
+	return [] if solutionSAT == "UNSAT" else translateSolution(solutionSAT[:3*n], n)
 
 
 def translateSolution(sol, n):
@@ -86,8 +86,6 @@ if __name__ == '__main__':
 	print("Solution pour le problème 3-Coloration :")
 	if solution:
 		print(solution)
-		solutionFound = translateSolution(solution, g[0])
-		print(solutionFound)
-		print("Vérification de la solution : " + str(verificateur3Coloration(g, solutionFound)) + ".")
+		print("Vérification de la solution : " + str(verificateur3Coloration(g, solution)) + ".")
 	else:
 		print("Pas de coloration.")
