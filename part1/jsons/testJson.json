@@ -1,0 +1,5 @@
+{
+  "algorithm": "lawler",
+  "tmpFile": "rand_20_50_unk-1",
+  "generatorWthArgs": "python ./src/generatorGraphFixedNumberEdges.py 20 50"
+}

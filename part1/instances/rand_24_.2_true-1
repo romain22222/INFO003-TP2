@@ -1,0 +1,17 @@
+c
+c Random graph with 24 vertices.
+c Each edge appears with probability 0.05.
+c
+p edge 24 12
+e 0 13
+e 1 21
+e 2 16
+e 4 9
+e 5 14
+e 5 16
+e 5 17
+e 11 13
+e 11 14
+e 12 19
+e 12 20
+e 14 17
